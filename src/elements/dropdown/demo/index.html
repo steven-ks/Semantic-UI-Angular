@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="semantic.ui.angular.dropdown">
+  <head lang="en">
+      <meta charset="UTF-8">
+      <title></title>
+      <link rel="stylesheet" href="../../../../node_modules/semantic-ui-css/semantic.css"/>
+  </head>
+  <body style="padding:100px;text-align:center;">
+
+    <div class="ui floating labeled icon dropdown button">
+      <i class="filter icon"></i>
+      <span class="text">Filter</span>
+      <div class="menu">
+        <div class="header">
+          Search Issues
+        </div>
+        <div class="ui left icon input">
+          <i class="search icon"></i>
+          <input type="text" name="search" placeholder="Search...">
+        </div>
+        <div class="header">
+          <i class="tags icon"></i>
+          Filter by tag
+        </div>
+        <div class="item">
+          <div class="ui red empty circular label"></div>
+          Important
+        </div>
+        <div class="item">
+          <div class="ui blue empty circular label"></div>
+          Announcement
+        </div>
+        <div class="item">
+          <div class="ui black empty circular label"></div>
+          Discussion
+        </div>
+      </div>
+    </div>
+
+    <script src="../../../../node_modules/angular/angular.js"></script>
+    <script src="../../../../node_modules/angular-aria/angular-aria.js"></script>
+    <script src="dropdown.module.js"></script>
+    <script src="../dropdown.js"></script>
+  </body>
+</html>
